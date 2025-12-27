@@ -1,0 +1,6 @@
+---
+- name: Ensure user toast exists
+  ansible.builtin.user:
+    name: toast
+    groups: sudo
+    create_home: true

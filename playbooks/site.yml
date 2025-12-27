@@ -1,0 +1,9 @@
+---
+- name: Homelab configuration
+  hosts: all
+  become: true
+
+  roles:
+    - base
+    - users
+    - s6

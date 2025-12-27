@@ -1,0 +1,9 @@
+# Ansible
+*.retry
+*.log
+.ansible
+
+# Nix
+.direnv/
+result
+result-*
