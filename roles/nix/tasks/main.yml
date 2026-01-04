@@ -1,0 +1,6 @@
+---
+- name: Install Determinate Nix
+  shell: curl -fsSL https://install.determinate.systems/nix | sh -s -- Install
+  args:
+    executable: /bin/bash
+    creates: /nix

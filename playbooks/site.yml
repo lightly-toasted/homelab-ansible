@@ -7,3 +7,7 @@
     - base
     - users
     - s6
+    - nix
+
+    # services
+    - glances

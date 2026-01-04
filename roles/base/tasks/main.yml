@@ -2,3 +2,14 @@
 - name: Update apt cache
   ansible.builtin.apt:
     update_cache: true
+    cache_valid_time: 3600
+
+- name: Install base system packages
+  ansible.builtin.apt:
+    name:
+      - python3
+      - python3-pip
+      - python3-virtualenv
+      - vim
+      - mosh
+    state: present
